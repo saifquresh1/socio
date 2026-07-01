@@ -6,7 +6,7 @@ const Feed = () => {
   const [posts, setPosts] = useState([]);   
   
   useEffect(()=>{
-    axios.get('http://localhost:3000/posts')
+    axios.get('https://socio-cw0h.onrender.com/posts')
     .then((res)=>{
         console.log(res.data);
         setPosts(res.data)
